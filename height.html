@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webtools|Height Convertor</title>
+    <link rel="stylesheet" href="height.css" />
+  </head>
+
+  <body>
+    <a href="index.html"
+      ><img id="Logo" src="LOGO.svg" height="100" width="100"
+    /></a>
+    <div class="container">
+      <h2>Length Converter</h2>
+      <p>Type a value in the Feet field to convert the value to Meters:</p>
+
+      <p>
+        <label>Feet</label>
+        <input
+          id="inputFeet"
+          type="number"
+          placeholder="Feet"
+          oninput="LengthConverter(this.value)"
+          onchange="LengthConverter(this.value)"
+        />
+      </p>
+      <p>Meters: <span id="outputMeters"></span></p>
+      <p>Inches: <span id="outputInches"></span></p>
+      <p>Cm: <span id="outputCm"></span></p>
+      <p>Yards: <span id="outputYards"></span></p>
+      <p>Kilometers: <span id="outputKilometers"></span></p>
+      <p>Miles: <span id="outputMiles"></span></p>
+    </div>
+
+    <script>
+      function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML = valNum / 3.2808;
+        document.getElementById("outputInches").innerHTML = valNum * 12;
+        document.getElementById("outputCm").innerHTML = valNum / 0.032808;
+        document.getElementById("outputYards").innerHTML = valNum * 0.33333;
+        document.getElementById("outputKilometers").innerHTML = valNum / 3280.8;
+        document.getElementById("outputMiles").innerHTML = valNum * 0.00018939;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #00a9ff;
+  color: #fff;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+h1 {
+  text-align: center;
+  font-size: 7rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.description {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px auto;
+  width: 800px;
+}
+
+.result {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.result .score {
+  background: rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+.startBtn {
+  margin: 20px auto 0;
+  font-size: 2.5rem;
+  width: 170px;
+  height: 60px;
+  background: #ff59cd;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.startBtn:hover {
+  cursor: pointer;
+}
+
+.startBtn:active {
+  background: #b159ff;
+}
+
+.game {
+  width: 600px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+  padding-left: 50px;
+}
+
+.hole::after {
+  display: block;
+  background: #fff;
+  content: '';
+  width: 100px;
+  height:50px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 7;
+  bottom: -30px;
+}
+
+.sweet, .bitter {
+  position: absolute;
+  top: 100%;
+  width: 100px;
+  height: 150px;
+  transition:all 0.4s;
+}
+
+.lollipop, .cane, .choco, .hammer, .apple, .knife {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.knife .blade {
+  height: 70px;
+  width: 15px;
+  background-image: linear-gradient(80deg, #007bba, #dce7ed 70%);
+  border-top-right-radius: 100px;
+  transform: rotate(35deg);
+  position: absolute;
+  left: 50px;
+  top: 15px;
+}
+
+.knife .handle {
+  width: 20px;
+  height: 40px;
+  background-image: linear-gradient(35deg, #b159ff, #ff59cd);
+  border-radius: 10%;
+  transform: rotate(35deg);
+  position: absolute;
+  left: 27px;
+  top: 60px;
+  border-bottom-left-radius: 25px;
+}
+
+.half {
+  height: 70px;
+  width: 55px;
+  background: #b20000;
+  position: absolute;
+  top: 25px;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+  z-index: 3;
+  left: 10px;
+}
+
+.half:nth-child(2) {
+  transform: rotate(20deg);
+  left: 30px;
+  background-image: radial-gradient(#bf0303, #a00101);
+}
+
+.tail {
+      border-bottom: 20px solid #891802;
+      border-left: 3px solid transparent;
+      border-right: 1px solid transparent;
+      height: 0;
+      width: 3px;
+      position: absolute;
+      left: 47px;
+      top: 15px;
+      transform: rotate(180deg);
+}
+
+.razor {
+  width: 20px;
+  height: 30px;
+  background: grey;
+  transform: rotate(-20deg);
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.razor::before, .razor::after {
+  content: ' ';
+  width: 5px;
+  height: 4px;
+  top: -1px;
+  border-radius: 20%;
+  position: absolute;
+  background: #00a9ff;
+}
+
+.razor::after {
+  left: 15px;
+}
+
+.razor-hole {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00a9ff;
+  top: 16px;
+  left: 19px;
+  z-index: 2;
+  position: absolute;
+}
+
+.razor-hole::before {
+  content: ' ';
+  height: 7px;
+  width: 2px;
+  background: #00a9ff;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  transform: rotate(-23deg);
+}
+
+.hammer {
+  padding-top: 15px;
+}
+
+.choco {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 84px;
+  padding: 10px 5px;
+}
+
+.hammer .handle {
+  height: 90px;
+  width: 12px;
+  left: 40px;
+  position: absolute;
+  border-radius: 15%;
+  background-image: linear-gradient(45deg, #c68e00, #ffb600);
+  transform: rotate(35deg);
+}
+
+.hammer .head {
+  width: 40px;
+  height: 20px;
+  background: #891802;
+  background-image: linear-gradient(#891802, #000);
+  position: absolute;
+  border-radius: 20%;
+  transform: rotate(35deg);
+  left: 44px;
+  top: 25px;
+}
+
+.choco .square {
+  width: 42px;
+  height: 42px;
+  background-image: linear-gradient(45deg, #681403, #991a01);
+  border: 7px ridge #891802;
+  border-radius: 5%;
+}
+
+.lollipop .head {
+  width: 70px;
+  height: 70px;
+  background: blue;
+  border-radius: 50%;
+  background-image: repeating-radial-gradient(#ff59cd, #b159ff, #fff 20%);
+  margin: 0 auto;
+}
+
+.lollipop .stick {
+  height: 80px;
+  width: 5px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.cane .pole {
+  position: absolute;
+  z-index: 5;
+  height: 70px;
+  width: 15px;
+  left: 40px;
+  top: 20px;
+  background: repeating-linear-gradient(
+  to bottom,
+  #fff,
+  #fff 10px,
+  #bf0303 10px,
+  #bf0303 20px
+)
+}
+
+.cane .round {
+      width: 50px;
+      height: 35px;
+      position: absolute;
+    background-color: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 15px solid #bf0303;
+    border-bottom: 0;
+    left: 40px;
+}
+
+.sweet:hover, .bitter:hover {
+  cursor: crosshair;
+}
+
+.hole.up .sweet {
+  top: 0;
+}
+
+.hole.down .bitter {
+  top: 0;
+}
+
+#Logo {
+  background-color:  white;
+  border-radius: 10px;
+  /* display: flex; */
+  margin: 15px;
+}

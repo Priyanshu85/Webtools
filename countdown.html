@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="countdown.css">
+    <title>Webtools|Countdown Timer</title>
+</head>
+<body>
+    <!-- <a href="index.html"><img id="Logo" src="LOGO.svg" height="100" width="100" /></a> -->
+    <video class="video-background" loop muted autoplay>
+        <source src="https://drive.google.com/uc?export=download&id=1rGeM6DW_NglXviGu4dznQIK4olQbs6jy"></source>
+    </video>
+    <div class="video-overlay"></div>
+    <div class="container">
+        <!-- Input -->
+        <div class="input-container" id="input-container">
+            <h1>Countdown Timer</h1>
+            <form class="form" id="countdownForm">
+                <label for="Title">Title</label>
+                <input type="text" id="title" placeholder="Countdown Timer Name">
+                <label for="date-picker">Date</label>
+                <input type="date" id="date-picker">
+                <Button type="submit">Submit</Button>
+            </form>
+        </div>
+        <!-- Countdown -->
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title"></h1>
+            <ul>
+                <li><span></span>Days</li>
+                <li><span></span>Hours</li>
+                <li><span></span>Minutes</li>
+                <li><span></span>Seconds</li>
+            </ul>
+            <button id="countdown-button">Reset</button>
+        </div>
+        <!-- Complete -->
+        <div class="complete" id="complete" hidden>
+            <h1 class="complete-title">Countdown Complete</h1>
+            <h2 id="complete-info"></h2>
+            <button id="complete-button">New Countdown</button>
+        </div>
+    </div>
+    <script src="countdown.js"></script>
+</body>
+</html>

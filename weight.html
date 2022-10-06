@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Webtools|Weight Converter</title>
+  <!-- for styling -->
+  <style>
+    body {
+      background: #654ea3;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #eaafc8, #654ea3);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+    }
+
+    span {
+      color: rgb(255, 7, 7);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Title of your Converter -->
+  <h2 style="color: rgb(10, 106, 122);">Weight Converter</h2>
+
+  <p>Enter a value in the Kilograms field to convert :</p>
+
+
+
+  <p>
+    <!-- label the input field -->
+    <label>Kilograms</label>
+    <!-- input tag for enter the data -->
+    <!-- kiloweightConvert function call
+ function kiloweightConvert to evaluate value-->
+    <input id="Kilograms" type="number" placeholder="kilograms" oninput="kiloweightConvert(this.value)"
+      onchange="kiloweightConvert(this.value)" />
+  </p>
+
+  <!-- output field-->
+
+  <p>Pounds: <span id="Pounds"></span></p>
+
+
+  <p>Ounces: <span id="Ounces"></span></p>
+
+
+  <p>Grams: <span id="Grams"></span></p>
+
+
+  <p>Stones: <span id="Stones"></span></p>
+
+
+  <script>
+    //function that evaluates the weight and return result
+    function kiloweightConvert(value) {
+      document.getElementById("Pounds").innerHTML =
+        value * 2.2046;
+      document.getElementById("Ounces").innerHTML =
+        value * 35.274;
+      document.getElementById("Grams").innerHTML =
+        value * 1000;
+      document.getElementById("Stones").innerHTML =
+        value * 0.1574;
+    }
+  </script>
+</body>
+
+</html>

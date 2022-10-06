@@ -1,0 +1,26 @@
+body{
+    background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body h2{
+font-size: 3em;
+text-decoration: underline;
+}
+body p{
+    font-size: 1.2em;
+}
+.container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+#Logo {
+    background-color:  white;
+    border-radius: 10px;
+    /* display: flex; */
+    margin: 15px;
+  }

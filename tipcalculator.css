@@ -1,0 +1,65 @@
+body {
+
+
+  background-color: #73dee7;
+  background-color: #d35400;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,58,1) 9%, rgba(0,212,255,1) 100%);
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.inputArea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.inputArea input{
+  margin: 12px;
+}
+/* .title {
+  color: #183666;
+  margin-bottom: 1em;
+  margin-top: 0.8em;
+  text-decoration: underline;
+} */
+#tiphai{
+  color: white;
+}
+h1 {
+  display: inline;
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2.4em;
+}
+
+#amount,
+#percentage {
+  width: 5em;
+}
+
+#calculate {
+  margin-top: 1em;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  border: 1px solid white;
+  /* border: linear-gradient(to right, red, purple); */
+}
+#Logo {
+  background-color:  white;
+  border-radius: 10px;
+  /* display: flex; */
+  margin: 15px;
+}

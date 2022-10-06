@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="word_count.css" />
+    <title>WEBTOOLS | Word count tool</title>
+  </head>
+  <body>
+    <a href="index.html"
+      ><img id="Logo" src="LOGO.svg" height="100" width="100"
+    /></a>
+    <div class="container">
+      <h1>Word Counter</h1>
+      <textarea placeholder="Enter your text here..."></textarea>
+      <div class="output row">
+        <div>Characters: <span id="characterCount">0</span></div>
+        <div>Words: <span id="wordCount">0</span></div>
+      </div>
+      <div class="output row">
+        <div>Sentences: <span id="sentenceCount">0</span></div>
+        <div>Paragraphs: <span id="paragraphCount">0</span></div>
+      </div>
+      <div class="output row">
+        <div>Reading Time: <span id="readingTime">0</span></div>
+        <div id="readability">Show readability score.</div>
+      </div>
+      <div class="keywords">
+        Top keywords:
+        <ul id="topKeywords"></ul>
+      </div>
+    </div>
+    <script src="word_count.js"></script>
+  </body>
+</html>

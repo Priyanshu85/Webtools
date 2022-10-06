@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="tipcalculator.css">
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+  <title>Percentage Tip Calculator</title>
+</head>
+
+<body>
+  <a href="index.html"><img id="Logo" src="LOGO.svg" height="100" width="100" /></a>
+
+  <div class="main-container">
+    <h1 id="tiphai">TIP Calculator</h1>
+    <div class="container">
+      <p>You can easily calculate the tip you want to give your service provider</p>
+      <div class="inputArea">
+        <h2>Bill &nbsp;</h2>
+        <input type="number" id="amount">
+        <h2>Tip % &nbsp;</h2>
+        <input type="number" id="percentage">
+      </div>
+    </div>
+  </div>
+
+<hr style="width: 60vw;">
+  <div class="container">
+    <div class="text-center">
+      <button type="submit" id="calculate">Calculate</button>
+      <br><br>
+      <p>Tip: <span id="tip"></span></p>
+      <p>Bill: <span id="total"></span></p>
+    </div>
+  </div>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="tipcalculator.js"></script>
+</body>
+
+</html>
