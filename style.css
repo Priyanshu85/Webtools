@@ -141,7 +141,7 @@ nav {
 
 /* SECTION-2 */
 .section-2 {
-  height: 125vh;
+  /* height: 125vh; */
   width: 100%;
   font-size: 1.3rem;
   /* color: black; */
@@ -209,12 +209,9 @@ nav {
 }
 .footer-basic {
   padding: 40px 0;
-  background-color: #ffffff;
-  color: #4b4c4d;
+  color: #ffffff;
   border-top: 2px solid;
-  border-top-color: grey;
-  position: relative;
-  top: 680px;
+  border-top-color: #ffffff;
 }
 
 .footer-basic ul {
@@ -314,13 +311,14 @@ nav {
   border-radius: 15px;
   border: 2px solid #ffa600;
   justify-self: center;
+  margin-bottom: 1.5rem;
   transition: all 190ms ease-in-out;
 }
 .grid-container p {
   color: white;
 }
 .grid-item img:hover {
-  height: 200px;
+  transform: scale(1.25);
 }
 
 /* Loading Animation */
