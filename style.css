@@ -222,6 +222,7 @@ nav {
 }
 
 .footer-basic {
+  margin-top: 8rem;
   padding: 40px 0;
   color: #ffffff;
   border-top: 2px solid;
@@ -322,6 +323,7 @@ nav {
   border-radius: 15px;
   border: 2px solid #ffa600;
   justify-self: center;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   transition: all 190ms ease-in-out;
 }
