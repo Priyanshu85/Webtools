@@ -215,6 +215,7 @@ nav {
   border-top-color: grey;
   position: relative;
   top: 680px;
+  margin-top: 50px;
 }
 
 .footer-basic ul {
@@ -284,9 +285,6 @@ nav {
   grid-gap: 2px;
   grid-template-columns: 33% 33% 33%;
   text-align: center;
-  grid-row-gap: 50px;
-  /* position: relative; */
-  /* display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; */
