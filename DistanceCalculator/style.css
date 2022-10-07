@@ -1,0 +1,71 @@
+body {
+  background: #00c9ff;
+  background: -webkit-linear-gradient(to right, #92fe9d, #00c9ff);
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+  background-repeat: no-repeat;
+  background-position: center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+fieldset {
+  width: 500px;
+  margin: 25px 0 0 50px;
+  border: 2px solid #000000;
+  box-shadow: 1px 1px #cccccc;
+  padding: 10px;
+}
+
+label {
+  float: left;
+  width: 240px;
+  display: block;
+  clear: left;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+button {
+  margin-left: 150px;
+  color:#ffffff;
+  background-color: rgb(30, 145, 221);
+  width:150px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+input {
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  width: 150px;
+}
+
+#bmi_label {
+  width: 300px;
+}
+
+#bmi {
+  width: 70px;
+  margin-top:13px;
+}
+
+#intro {
+  width: 500px;
+  margin: 25px 0 0 50px;
+  padding: 10px;
+  border: 2px solid #000000;
+  box-shadow: 1px 1px #cccccc;
+}
+#Logo {
+  background-color:  white;
+  border-radius: 10px;
+  /* display: flex; */
+  position: relative;
+  top: -280px;
+right: 340px;
+  margin: 15px;
+}

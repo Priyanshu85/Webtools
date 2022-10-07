@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEBTOOLS | Distance Calculator</title>
+</head>
+<body>
+	<a href="../index.html"><img id="Logo" src="../LOGO.svg" height="100" width="100" /></a>
+	<div>
+		<p id="intro">Calculate the distance between a pair of latitude and longitude.</p>
+		<form action="none" method="post" name="distform">
+			<fieldset>
+			<legend>Point 1</legend>
+				<label for="lat">Latitude (N):</label>
+				<input type="text" name="lat1" id="lat1">
+				<br>
+				<label for="lon">Longitude (W):</label>
+				<input type="text" name="lon1" id="lon1">
+				<br>
+			</fieldset>
+		<fieldset>
+				<legend>Point 2</legend>
+				<label for="lat">Latitude (N):</label>
+				<input type="text" name="lat2" id="lat2">
+				<br>
+				<label for="lon">Longitude (W):</label>
+				<input type="text" name="lon2" id="lon2">
+				<br>
+			</fieldset>
+		<fieldset>
+				<button type="button" name="calculate" value="Calculate Distance" onclick="calcDist()">Calculate Distance</button>
+			</fieldset>
+			<fieldset>
+			<legend>Distance in km</legend>
+				<label for="dist" id="dist_label">Your calculated Distance is:</label>
+				<input type="text" name="dist" id="dist" readonly="readonly">
+			</fieldset>
+		</form>
+	</div>
+    <script src="app.js"></script>
+</body>
+</html>
