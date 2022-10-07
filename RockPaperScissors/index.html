@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webtools|RockPaperScissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+
+  <body onload="newGame()">
+    <a href="../index.html"
+      ><img id="Logo" src="../LOGO.svg" height="100" width="100"
+    /></a>
+    
+    
+        <div class="container">
+            <div class="top_info">
+                <h1>Rock Paper Scissors</h1>
+                <p>You <span id="score_a"></span></p>
+                <p>Computer <span id="score_b"></span></p>
+                
+                <button onclick="newGame()">New Game</button>
+            </div>
+            
+            <div class="game_container">
+                <div id="rock" class="" onclick="pickOption(1)">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-rock-o-512.png">
+                    <span>Rock</span>
+                </div>
+                <div id="paper" class="" onclick="pickOption(2)">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-stop-o-512.png">
+                    <span>Paper</span>
+                </div>
+                <div id="scissors" class="" onclick="pickOption(3)">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-scissors-o-512.png">
+                    <span>Scissors</span>
+                </div>
+            </div>
+        </div>
+    
+  </body>
+  <script src="app.js" ></script>
+</html>
