@@ -95,6 +95,11 @@
             if (x == y) {
                 alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
                     + guess + " GUESS ");
+
+                y = Math.floor(Math.random() * 10 + 1);
+                guess = 1;
+
+                alert("Game Restarted!! New number generated.");
             }
             else if (x > y) /* if guessed number is greater
                    than actual number*/ {
