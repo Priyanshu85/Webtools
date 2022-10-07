@@ -53,15 +53,19 @@ nav {
   padding: 1.3rem;
   transition: all 140ms ease-in-out;
 }
+.left li{
+  transition-duration: 300ms;
+}
+.left li:hover{
+  transform: rotateZ(5deg) scale(120%);  
+}
 .left a:hover{
   color: black;
-  font-weight: center;
-  text-decoration: underline;
-
+  text-decoration: none;
 }
 .left button {
   border: none;
-  padding: 0.5em 01em;
+  padding: 0.5em 0;
   border-radius: 5px;
   background-color: rgb(243, 243, 243);
   transition: all ease-in 170ms;
