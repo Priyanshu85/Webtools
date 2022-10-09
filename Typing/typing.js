@@ -50,10 +50,10 @@ const wordCounter = (str) => {
 btn.addEventListener('click', function() {
 	console.log(this); // current btn 
 	if (this.innerText == 'Start') {
-		typedWords.disabled = false;
+        typedWords.value="";
+        typedWords.focus();
 		playGame();
 	} else if (this.innerText == "Done") {
-		typedWords.disabled = true;
 		btn.innerText = "Start";
 		endGame();
 	}

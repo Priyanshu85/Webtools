@@ -219,7 +219,7 @@ nav {
   margin-left: 10px;
 }
 
-#ourtools {
+.ourtools_heading {
   font-family: cursive, sans-serif;
   position: relative;
   bottom: 50px;
@@ -228,6 +228,8 @@ nav {
   text-shadow: 2px 2px 5px #ffa600;
   font-size: 2rem;
   text-decoration: underline;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-basic {
