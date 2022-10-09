@@ -34,6 +34,41 @@ nav {
   align-items: center;
   /* background-color: yellow; */
 }
+
+
+/* #### Scroll to top Button #### */
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: -60px;
+    background-color: rgb(219, 87, 26);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    width: 48px;
+    transition: right 0.5s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4), -3px -3px 8px rgba(0, 0, 0, 0.2);
+    /* animation: bounce 1s infinite; */
+  }
+/*   
+  @keyframes bounce {
+    0%{
+      bottom: 40px;
+    }
+    100%{
+      bottom: 30px;
+    }
+  } */
+
+/* #### Scroll to top Button #### */
+
 #webtools {
   margin-left: -200px;
 }
