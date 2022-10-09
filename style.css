@@ -218,15 +218,17 @@ nav {
   margin-left: 10px;
 }
 
-#ourtools {
+.ourtools_heading {
   font-family: cursive, sans-serif;
   position: relative;
-  bottom: 50px;
-  margin: 42%;
+  /* bottom: 50px; */
+  /* margin: 42%; */
   color: #ffffff;
   text-shadow: 2px 2px 5px #ffa600;
   font-size: 2rem;
   text-decoration: underline;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-basic {
