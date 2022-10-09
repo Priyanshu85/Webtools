@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book-app-wrapper">
+        
+        <div class="form-wrapper">
+            <h1 class="title">My Book App</h1>
+
+            <div class="alert"></div>
+
+            <form id="save-book-form" class="book-form">
+                <input type="text" name="book-name"placeholder="name" required>
+                <input type="text" name="book-author" placeholder="author" required>
+                <input type="number" name="book-edition" placeholder="edition" required>
+                <button type="button" id="add-btn" class="btn">Add Book</button>
+            </form>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="book-table">
+                <thead>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Edition</th>
+                    <th>Action</th>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+
+    </div>
+    
+    <div class="overlay">
+        <div id="model-form">
+            <div id="close-btn">&times;</div>
+            <h2 class="title">Edit Book</h2>
+
+            <form id="edit-book-form" class="book-form">
+                <input type="text" name="book-name"placeholder="name" required>
+                <input type="text" name="book-author" placeholder="author" required>
+                <input type="number" name="book-edition" placeholder="edition" required>
+                <button type="button" id="save-btn" class="btn">Save Book</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
