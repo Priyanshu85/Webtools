@@ -6,6 +6,7 @@
   position: relative;
   z-index: 20 !important;
 }
+
 html {
   position: relative;
   z-index: 20 !important;
@@ -222,8 +223,8 @@ nav {
   font-family: cursive, sans-serif;
   position: relative;
   bottom: 50px;
-  margin: 42%;
   color: #ffffff;
+  text-align: center;
   text-shadow: 2px 2px 5px #ffa600;
   font-size: 2rem;
   text-decoration: underline;
@@ -300,15 +301,7 @@ nav {
   z-index: 0;
   /* opacity: 0; */
 }
-.grid-container {
-  display: grid;
-  grid-gap: 2px;
-  grid-template-columns: 33% 33% 33%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 /* QUOTE GENEREATOR */
 
@@ -326,9 +319,22 @@ nav {
 #quote-text::after {
   content: '"';
 }
+
+
+.grid-container {
+  /* display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 30% 30% 30%; */
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  /* flex-direction: column; */
+}
+
 .grid-item img {
   /* padding: 9px; */
   height: 150px;
+  width: 150px;
   border-radius: 15px;
   border: 2px solid #ffa600;
   justify-self: center;
@@ -336,6 +342,7 @@ nav {
   margin-bottom: 1.5rem;
   transition: all 190ms ease-in-out;
 }
+
 .grid-container p {
   color: white;
 }
