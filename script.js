@@ -47,3 +47,24 @@ function getQuote(quote) {
       quote.html(data.quoteText);
   });
 }
+
+//   Scroll to top Button
+
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+var rootElement = document.documentElement;
+
+window.onscroll = () => {
+  if (rootElement.scrollTop > 300) {
+    scrollToTopBtn.style.right = "20px";
+  } else if (rootElement.scrollTop < 300) {
+    scrollToTopBtn.style.right = "-60px";
+  }
+};
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
