@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="theme-icon">
+        <span class="material-symbols-outlined icon">brightness_6</span>
+    </div>
+
+    <div class="box">
+        <header>
+            <h2 class="heading">Task App</h2>
+            <button class="add-icon" id="show-add-form-btn">
+                <span class="material-symbols-outlined icon">add</span>
+            </button>
+        </header>
+
+        <div class="add-task">
+            <div class="input-box">
+                <input type="text" placeholder="Add a new task" id="input-task">
+                <span class="error-msg">Title required</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button id="clear-btn">Clear All</button>
+        </div>
+
+        <div class="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
