@@ -30,11 +30,11 @@
 // })
 
 
-$(function() {
+$(function () {
   var quote = $('#quote-text');
   getQuote(quote);
 
-  $('#getQuote').click(function(event) {
+  $('#getQuote').click(function (event) {
     event.preventDefault();
     getQuote(quote);
   })
@@ -43,7 +43,28 @@ $(function() {
 function getQuote(quote) {
   var url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?"
 
-  $.getJSON(url, function(data) {
-      quote.html(data.quoteText);
+  $.getJSON(url, function (data) {
+    quote.html(data.quoteText);
   });
 }
+
+//   Scroll to top Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const rootElement = document.documentElement;
+
+window.onscroll = () => {
+  if (rootElement.scrollTop > 300) {
+    scrollToTopBtn.style.right = "30px";
+  } else if (rootElement.scrollTop < 300) {
+    scrollToTopBtn.style.right = "-60px";
+  }
+};
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
