@@ -20,7 +20,8 @@ body {
 
 .content {
   padding: 40px;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -41,7 +42,8 @@ body {
   justify-content: space-between;
   height: 68px;
   padding: 0 20px;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -57,6 +59,7 @@ body {
 }
 #webtools {
   font-size: 28px;
+  margin: 0;
 }
 
 /* Right part */
@@ -70,6 +73,7 @@ body {
   align-items: center;
   list-style-type: none;
   column-gap: 1.8em;
+  margin: 0;
 }
 
 .right li {
@@ -238,7 +242,7 @@ nav {
 }
 .quote {
   text-align: center;
-  margin-top: 1.4em;
+  margin: 0 0 160px 0;
   font-size: 12px;
   line-height: 1.9;
   color: white;
@@ -297,7 +301,7 @@ nav {
 } */
 .content-2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   column-gap: 50px;
   position: relative;
@@ -485,14 +489,20 @@ nav {
   padding: 0;
 }
 
+/* For Tablets */
 @media only screen and (max-width: 992px) {
   .content-1 {
     flex-direction: column;
     row-gap: 50px;
   }
   .content-1 h1,
-  .left_mini_sec_2 {
+  .left_mini_sec_2,
+  .right-sec {
     text-align: center;
+  }
+  .right-sec h1,
+  .left_mini_sec_2 {
+    width: auto;
   }
   .content-2 {
     flex-direction: column;
@@ -500,6 +510,10 @@ nav {
   }
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .quote {
+    margin-bottom: 120px;
+    margin-top: 30px;
   }
 }
 
@@ -534,6 +548,7 @@ nav {
   }
 }
 
+/* For Mobiles */
 @media only screen and (max-width: 576px) {
   .grid-container {
     grid-template-columns: 1fr;
