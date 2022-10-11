@@ -90,7 +90,7 @@ body {
   text-decoration: none;
 }
 
-.right #tools {
+.right .tools_btn {
   color: black;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -99,7 +99,7 @@ body {
   background-color: rgb(243, 243, 243);
   transition: all ease-in 170ms;
 }
-.right #tools:hover {
+.right .tools_btn:hover {
   color: white;
   background-color: #333;
 }
@@ -433,7 +433,7 @@ nav {
 .grid-container {
   display: grid;
   grid-gap: 2px;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -524,10 +524,9 @@ nav {
     flex-direction: column;
     row-gap: 30px;
   }
-  #sidebar.show {
+  #sidebar.right.show {
     left: 0;
   }
-
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
