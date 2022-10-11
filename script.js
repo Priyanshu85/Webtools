@@ -48,7 +48,15 @@ function getQuote(quote) {
   });
 }
 
-//   Scroll to top Button
+// Sidebar
+const menuIcon = document.querySelector('#menu_icon');
+const sideBar = document.querySelector('#sidebar');
+
+menuIcon.addEventListener('click', () => {
+  sideBar.classList.toggle('show');
+})
+
+// Scroll to top Button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 const rootElement = document.documentElement;
 
@@ -68,3 +76,18 @@ function scrollToTop() {
 }
 
 scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// Top Navigation slide
+const topNav = document.querySelector('.nav_wrapper');
+
+var prevYpos = window.pageYOffset;
+window.addEventListener('scroll', () => {
+    let currentYpos = window.pageYOffset;
+
+    if (prevYpos > currentYpos)
+        topNav.style.top = "0";
+    else
+        topNav.style.top = "-100%";
+
+    prevYpos = currentYpos;
+});

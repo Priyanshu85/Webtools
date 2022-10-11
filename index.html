@@ -57,25 +57,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
 
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <nav class="animate__animated animate__bounceInDown">
+
+  <div id="particles-js"></div>
+
+  <nav class="nav_wrapper animate__animated animate__bounceInDown">
     <div id="navbar">
-      <a href="index.html"><img id="Logo" src="LOGO.svg" height="100" width="100" /></a>
-      <div class="right">
+      <div class="left">
+        <a href="index.html"><img id="logo" src="LOGO.svg" /></a>
         <h1 id="webtools">WEBTOOLS</h1>
       </div>
 
-      <div class="left">
+      <div class="right" id="sidebar">
         <ul>
           <li><a href="#">HOME</a></li>
           <li>
             <a href="https://hiddencontact.herokuapp.com/" target="_blank">CONTACT US</a>
           </li>
-          <button id="tools"><a href="#section-2">TOOLS</a></button>
+          <li>
+            <a id="tools" href="#section-2">TOOLS</a>
+          </li>
         </ul>
+      </div>
+      <div id="menu_icon">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <i class="fa-solid fa-bars-staggered"></i>
       </div>
     </div>
   </nav>
@@ -100,12 +111,12 @@
         </h1>
         <p>All in one place!!</p>
       </div>
-      <div id="particles-js"></div>
       <div class="left-sec mini_sec_1">
         <img data-tilt src="undraw_web_devices_re_m8sc (1).svg" alt="image here" height="310" />
       </div>
     </div>
   </div>
+
   <div class="section-1">
     <div class="content-2">
       <span class="right_mini_sec_2">
@@ -116,6 +127,7 @@
       </span>
     </div>
   </div>
+
   <div style="height: 170px"></div>
 
   <div class="section-2" id="section-2">
