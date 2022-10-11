@@ -1,3 +1,7 @@
+:root{
+  --color-black:#111;
+  --color-orange:#ffa600;
+}
 /* Priyanshu CSS */
 * {
   margin: 0%;
@@ -14,7 +18,7 @@ html {
 }
 body {
   padding-top: 68px;
-  color: rgb(0, 0, 0);
+  color: var(--color-black);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -31,7 +35,7 @@ body {
   top: 0;
   width: 100%;
   height: 68px;
-  background-color: #ffa600;
+  background-color: var(--color-orange);
   z-index: 999 !important;
   transition: all 0.3s ease-in-out;
 }
@@ -48,9 +52,14 @@ body {
 }
 
 /* Left part */
-.left {
+.left a{
   display: flex;
   align-items: center;
+  color: var(--color-black);
+}
+.left a:hover{
+  color: var(--color-black);
+  text-decoration: none;
 }
 
 #logo {
@@ -85,19 +94,19 @@ body {
 
 .right li a {
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
   font-size: 1.1rem;
   font-weight: bold;
   transition: all 140ms ease-in-out;
 }
 
 .right li a:hover {
-  color: black;
+  color: var(--color-black);
   text-decoration: none;
 }
 
 .right .tools_btn {
-  color: black;
+  color: var(--color-black);
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
@@ -127,7 +136,7 @@ body {
   bottom: 30px;
   right: -60px;
   z-index: 999 !important;
-  background-color: #ffa600;
+  background-color: var(--color-orange);
   border: none;
   outline: none;
   border-radius: 50%;
@@ -145,7 +154,7 @@ body {
 
 @keyframes bounce {
   0% {
-    bottom: 32px;
+    bottom: 31px;
   }
   100% {
     bottom: 30px;
@@ -273,7 +282,7 @@ nav {
   font-size: 3.2rem;
   width: 30vw;
   line-height: 1.2;
-  color: #ffa600;
+  color: var(--color-orange);
   /* background-color: green; */
 }
 .right-sec p {
@@ -329,7 +338,7 @@ nav {
   /* font-size: 2rem; */
   line-height: 1.2;
   font-family: cursive, sans-serif;
-  color: #ffa600;
+  color: var(--color-orange);
   float: right;
 }
 .left_mini_sec_2 h1 {
@@ -340,7 +349,7 @@ nav {
   margin-right: 10px;
 } */
 .left-sec img {
-  box-shadow: 10px 10px 5px #ffa600;
+  box-shadow: 10px 10px 5px var(--color-orange);
   /* -moz-box-shadow: 10px 10px 5px #ffa600; */
   /* -webkit-box-shadow: 10px 10px 5px #ffa600; */
   /* -khtml-box-shadow: 10px 10px 5px #ffa600; */
@@ -359,7 +368,7 @@ nav {
   /* bottom: 50px; */
   /* margin: 42%; */
   color: #ffffff;
-  text-shadow: 2px 2px 5px #ffa600;
+  text-shadow: 2px 2px 5px var(--color-orange);
   font-size: 2rem;
   text-decoration: underline;
   width: 100%;
@@ -412,7 +421,7 @@ nav {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #ffa600;
+  border: 1px solid var(--color-orange);
   margin: 0 8px;
   color: inherit;
   opacity: 0.75;
@@ -466,7 +475,7 @@ nav {
   /* padding: 9px; */
   height: 150px;
   border-radius: 15px;
-  border: 2px solid #ffa600;
+  border: 2px solid var(--color-orange);
   justify-self: center;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -532,7 +541,7 @@ nav {
     left: -320px;
     top: 68px;
     color: #fff;
-    background-color: #ffa600;
+    background-color: var(--color-orange);
     padding: 20px 0 0 0;
     transition: all 0.3s ease-out;
   }

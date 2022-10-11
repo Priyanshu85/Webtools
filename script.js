@@ -90,4 +90,5 @@ window.addEventListener('scroll', () => {
         topNav.style.top = "-100%";
 
     prevYpos = currentYpos;
+    sideBar.classList.remove('show');
 });
