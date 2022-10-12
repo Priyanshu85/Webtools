@@ -16,9 +16,10 @@ body {
   font-family: "Montserrat", sans-serif;
   /* background-color: ; */
 }
-nav {
+
+/* nav { */
   /* height: 12vh; */
-  width: 100%;
+  /* width: 100%;
   background-color: #ffa600;
   background-color: #ffa600;
   position: relative;
@@ -28,24 +29,28 @@ nav {
   padding: 0.8rem 3rem 0 1.8rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   /* background-color: yellow; */
-}
-#webtools {
+/* } */
+
+/* #webtools { */
   /* margin-left: -200px; */
-}
-#tools {
+/* } */
+
+/* #tools { */
   /* margin-left: -60px; */
-}
-#logo__container{
-  display: flex;
+/* } */
+
+/* #logo__container{
+  display: flex; */
   /* gap: 1rem; */
-  text-decoration: none;
+  /* text-decoration: none;
   color: #212529;
   align-items: center;
 
-}
-.nav__links__container {
+} */
+
+/* .nav__links__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,16 +63,16 @@ nav {
   margin-bottom: 0;
 }
 .nav__links__container a {
-  text-decoration: none;
+  text-decoration: none; */
   /* color: rgb(255, 255, 255); */
-  color: black;
+  /* color: black; */
   /* color: rgb(105, 101, 101); */
-  font-size: 1.2rem;
+  /* font-size: 1.2rem;
   font-weight: bold;
   padding: 1.3rem;
   transition: all 140ms ease-in-out;
-}
-.nav__links__container li {
+} */
+/* .nav__links__container li {
   transition-duration: 300ms;
 }
 .nav__links__container li:hover {
@@ -113,7 +118,128 @@ main#content{
   display: flex;
   flex-direction: column;
   gap: 4.5rem;
+} */
+
+/* =============================
+  Ezefizzy responsive navbar
+============================= */
+nav {
+  width: 100%;
+  background-color: #ffa600;
+  background-color: #ffa600;
+  position: relative;
+  z-index: 22 !important;
 }
+
+.nav-btn {
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: none;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #000;
+}
+
+.nav-btn .bar {
+  width: 20px;
+  height: 2px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.nav-btn .bar:first-child {
+  margin: 8px auto;
+}
+
+.nav-btn .bar:last-child {
+  margin: 8px auto;
+}
+
+.navlinks {
+  top: 15px;
+  right: 50px;
+  width: 50%;
+  position: absolute;
+  list-style: none;
+}
+
+.navlinks li {
+  width: 30%;
+  transition-duration: 300ms;
+  display: inline-block;
+}
+
+.navlinks li:hover {
+  transform: rotateZ(5deg) scale(120%);
+}
+
+.navlinks li a{
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  transition: all 140ms ease-in-out;
+}
+
+.navlinks li a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.navlinks li button {
+  border: none;
+  padding: 2px 20px;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  transition: all ease-in 170ms;
+  position: relative;
+  left: 5rem;
+  transform: scale(1.1);
+}
+
+.navlinks li button:hover {
+  transform: scale(1);
+  background-color: black;
+}
+
+.navlinks li button a{
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+}
+
+.navlinks li button a:hover {
+  color: white;
+}
+
+.logo-block {
+  margin: 0px 5px;
+}
+
+#logo {
+  width: 200px;
+  font-size: 1.5em;
+  display: block;
+  /* display: flex; */
+  /* margin-right: 0px; */
+  color: black;
+  text-decoration: none;
+}
+
+#logo img {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+
+/* =============================
+  Ezefizzy responsive navbar end
+============================= */
 
 /* SECTION-1 */
 .section-1 {
