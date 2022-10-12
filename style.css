@@ -6,10 +6,12 @@
   position: relative;
   z-index: 20 !important;
 }
+
 html {
   position: relative;
   z-index: 20 !important;
 }
+
 body {
   background-color: #262626 !important;
   color: rgb(0, 0, 0);
@@ -25,32 +27,32 @@ body {
   position: relative;
   z-index: 22 !important;
 }
+
 #navbar {
   padding: 0.8rem 3rem 0 1.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center; */
   /* background-color: yellow; */
-/* } */
+/* }
 
-/* #webtools { */
+#webtools { */
   /* margin-left: -200px; */
-/* } */
+/* }
 
-/* #tools { */
+#tools { */
   /* margin-left: -60px; */
-/* } */
+/* }
 
-/* #logo__container{
+#logo__container{
   display: flex; */
   /* gap: 1rem; */
   /* text-decoration: none;
   color: #212529;
   align-items: center;
 
-} */
-
-/* .nav__links__container {
+}
+.nav__links__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,8 +73,9 @@ body {
   font-weight: bold;
   padding: 1.3rem;
   transition: all 140ms ease-in-out;
-} */
-/* .nav__links__container li {
+}
+
+.nav__links__container li {
   transition-duration: 300ms;
 }
 .nav__links__container li:hover {
@@ -103,26 +106,16 @@ body {
   transform: scale(1);
   background-color: black;
 }
+
 .nav__links__container button a:hover {
   color: white;
-}
-
-main#content{
-  display: flex;
-  flex-direction: column;
-  gap: 9rem;
-  margin: 0 3rem;
-}
-
-#about{
-  display: flex;
-  flex-direction: column;
-  gap: 4.5rem;
 } */
 
-/* =============================
-  Ezefizzy responsive navbar
-============================= */
+
+/* ======================================
+  nav styling by ezekiel8807
+====================================== */
+
 nav {
   width: 100%;
   background-color: #ffa600;
@@ -218,7 +211,7 @@ nav {
 }
 
 .logo-block {
-  width: 250px;
+  width: 200px;
   margin: 0px 5px;
 }
 
@@ -232,8 +225,8 @@ nav {
 }
 
 #logo img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: inline-block;
 }
 
@@ -241,10 +234,23 @@ nav {
   font-size: 25px;
 }
 
+/* ======================================
+  nav styling by ezekiel8807 end
+====================================== */
 
-/* =============================
-  Ezefizzy responsive navbar end
-============================= */
+
+main#content{
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  margin: 0 3rem;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
 
 /* SECTION-1 */
 .section-1 {
@@ -267,6 +273,10 @@ nav {
   align-items: center;
   font-family: "Cabin Condensed", sans-serif;
 }
+
+/* #logo {
+  padding: 0;
+} */
 
 .right-sec h1 {
   font-size: 3.2rem;
@@ -295,6 +305,7 @@ nav {
   position: relative;
   z-index: -1;
 }
+
 .content-2 {
   display: flex;
   justify-content: space-between;
@@ -303,10 +314,17 @@ nav {
   margin-top: 5rem;
   font-family: "Cabin Condensed", sans-serif;
 }
+
 .right_mini_sec_2 {
   position: relative;
   width: fit-content;
 }
+
+.right_mini_sec_2 img{
+  width: 350px;
+}
+
+
 .left_mini_sec_2 {
   max-width: 45%;
   text-align: end;
@@ -315,11 +333,14 @@ nav {
   color: #ffa600;
   float: right;
 }
+
 .left_mini_sec_2 h1 {
   font-size: 3em;
 }
 
+
 .left-sec img {
+  height: 310px;
   box-shadow: 10px 10px 5px #ffa600;
 }
 .left-sec img:hover {
@@ -400,14 +421,29 @@ nav {
   color: #aaa;
   margin-bottom: 0;
 }
-#particles-js {
+
+/* #particles-js {
   position: fixed;
   width: 100%;
   height: 120%;
   background: #262626;
-  z-index: 0;
+  z-index: 0; */
   /* opacity: 0; */
+/* } */
+
+#particles-js {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  z-index: 0 !important;
+  /* opacity: 0; */
+  position: absolute;
 }
+
+
+
+
 .grid-container {
   display: grid;
   grid-gap: 2px;
@@ -428,12 +464,15 @@ nav {
 
   /* font-family: "Corinthia", cursive; */
 }
+
 #quote-text::before {
   content: ' "  ';
 }
+
 #quote-text::after {
   content: '"';
 }
+
 .grid-item img {
   /* padding: 9px; */
   width: 10rem;
