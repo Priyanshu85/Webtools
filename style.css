@@ -218,11 +218,11 @@ nav {
 }
 
 .logo-block {
+  width: 250px;
   margin: 0px 5px;
 }
 
 #logo {
-  width: 200px;
   font-size: 1.5em;
   display: block;
   /* display: flex; */
@@ -232,10 +232,15 @@ nav {
 }
 
 #logo img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: inline-block;
 }
+
+#webtools {
+  font-size: 25px;
+}
+
 
 /* =============================
   Ezefizzy responsive navbar end
@@ -263,9 +268,6 @@ nav {
   font-family: "Cabin Condensed", sans-serif;
 }
 
-#logo {
-  padding: 0;
-}
 .right-sec h1 {
   font-size: 3.2rem;
   width: 30vw;
