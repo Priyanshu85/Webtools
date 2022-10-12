@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base64 Convert</title>
+    <link rel="icon" type="image/png" href="img/Base64.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="b64">
+        <header>
+          <h1>Base64 Encode/Decode</h1>
+          <p>A string is a text convert into base64 <br /></p>
+        </header>
+
+        <div class="main">
+          <form action="#" method="post">
+            <h3 style="color: #fff">Enter a String :</h3>
+            <input
+              class="input-container"
+              name="txtstr"
+              id="txtstr"
+              cols="26"
+              rows="5"
+            />
+            <button id="btnencode64">Encode</button><br /><br />
+            <h3 style="color: #fff">Base64 encoded data :</h3>
+            <input
+              class="input-container"
+              type="text"
+              name="str64"
+              id="str64"
+              size="34"
+            />
+            <button id="btndecode64">Decode</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
