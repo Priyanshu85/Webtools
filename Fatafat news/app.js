@@ -6,13 +6,13 @@ var nexbtn = document.querySelector(".nextbtn");
 var txt = '';
 var inp = document.getElementById("topicinp");
 var btn = document.querySelector(".submit");
-var search = prompt("Enter the value, you want to search news for");
+// var search = prompt("Enter the value, you want to search news for");
 console.log(search);
 var date = document.querySelector(".date")
 
 
 var Apikey = "5d940e457fdb4997a19b0c561af7eb88";
-var url = `https://newsapi.org/v2/everything?q=${search}&apiKey=${Apikey}`;
+var url = `https://newsapi.org/v2/everything?q=Latest&apiKey=${Apikey}`;
 function getdata(){
     fetch(url).then((response)=>{
         return response.json();
