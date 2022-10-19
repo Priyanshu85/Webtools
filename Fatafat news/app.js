@@ -6,7 +6,7 @@ var nexbtn = document.querySelector(".nextbtn");
 var txt = '';
 var inp = document.getElementById("topicinp");
 var btn = document.querySelector(".submit");
-// var search = prompt("Enter the value, you want to search news for");
+
 console.log(search);
 var date = document.querySelector(".date")
 
