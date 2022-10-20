@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+:root {
+  --primary-color: #a2066c87;
+  --secondary-color: rgb(31, 3, 3);
+  --divider-color: #303030bb;
+  --red: #cf0d0d;
+  --off-red: #940a0a;
+  --green: #00bf00;
+  --off-green: #4fff4f;
+}
+
+
+body{
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.heading {
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 10rem;
+  /* border-bottom-right-radius: 10rem; */
+  height: 5rem;
+}
+
+.heading a {
+  font-size: 3.5rem;
+}
+
+.heading span {
+  color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 0 5rem;
+}
+
+.left-input, .right-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 0.8rem;
+  padding: 2rem;
+}
+
+.divider {
+  height: 98%;
+  padding: 1.5px;
+  background-color: var(--divider-color);
+  margin-top: 3rem;
+}
+
+.left-input div {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.left-input div label {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.left-input div input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px var(--primary-color);
+  align-self: center;
+}
+
+.left-input div input:active {
+  box-shadow: none;
+}
+
+.show-me-btn {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  box-shadow: 3px 3px var(--primary-color);
+}
+
+.show-me-btn:active {
+  box-shadow: none;
+  transform: translateY(2px)
+}
+
+.output-message {
+  font-size: 1.8rem;
+  width: 90%;
+}
+
+span {
+  font-weight: 600;
+}
+
+.gif {
+  width: 20rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+
+
+
+@media (max-width:764px) {
+  .left-input div label {
+    font-size: 1.8rem;
+  }
+  .header-text {
+    margin-top: 1rem;
+  }
+  .left-input div input {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  .output-message {
+    font-size: 1.3rem;
+  }
+  .gif {
+    width: 15rem;
+  }
+}
+
+
+@media (max-width:648px) {
+  main {
+    flex-direction: column;
+    height: 90vh;
+    justify-content: start;
+  }
+  .divider {
+    height: 0;
+    width: 80%;
+    margin: 0;
+  }
+  .left-input, .right-output {
+    gap: 0.5rem;
+    padding: 0.8rem;
+    flex: 0;
+  }
+  .heading a {
+    font-size: 2.5rem;
+  }
+  .show-me-btn {
+    margin: 0.8rem;
+  }
+  .left-input div label {
+    font-size: 1.5rem;
+  }
+  .left-input div input {
+    font-size: 1.3rem;
+  }
+  .gif {
+    width: 14rem;
+  }
+  .header-text {
+    padding-top: auto;
+  }
+
+}
+
+@media (max-width: 406px) {
+  .heading a {
+    font-size: 2rem;
+  }
+  .heading {
+    padding: 0.5rem;
+  }
+  .header-text {
+    padding-top: auto;
+  }
+}
