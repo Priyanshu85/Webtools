@@ -4,62 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cash Register App</title>
+  <title>Stock Purhcase</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="App.js" defer></script>
-
+  <script src="app.js" defer></script>
 </head>
 <body>
-  
-  <header>
-    <h1 class="header-heading">Cash Register App</h1>
-    <p class="header-para">Enter the Bill amount and Cash given to get the minimum number of notes to return.</p>
-  </header>
-
+  <h1 class="heading"><a href="./index.html" class="header-text">Stocks Calculator</a></h1>
   <main>
+    
+    <section class="left-input">
 
-    <div class="bill">
-      <label for="bill-amount">Bill Amount</label>
-      <input type="text" id="bill-amount" />
-      <button class="next-button">Next</button>
-      <p class="bill-error"></p>
-    </div>
-
-    <div class="cash">
-      <label for="cash-given">Cash Given</label>
-      <input type="text" id="cash-given">
-      <button class="check-button">Check</button>
-      <p class="cash-error"></p>
-    </div>
+      <div class="initial-div">
+        <label for="initial-price">Initial Price</label>
+        <input type="number" id="initial-price"/>
+      </div>
+      
+      <div class="quantity-div">
+        <label for="stocks-quantity">Quantity of Stocks</label>
+        <input type="number" id="stocks-quantity"/>
+      </div>
+      
+      <div class="current-div">
+        <label for="current-price">Current Price</label>
+        <input type="number" id="current-price"/>
+      </div>
+    
+      <button class="show-me-btn">Tell Me !!</button>
+    </section>
     <div class="divider"></div>
-    <p class="paid"></p>
 
-    <table class="table">
-      <caption class="table-heading">Return Change</caption>
-      <tr>
-        <th>No. of Notes</th>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-        <td class="no-of-notes"></td>
-      </tr>
 
-      <tr>
-        <th>Note</th>
-        <td>2000</td>
-        <td>500</td>
-        <td>100</td>
-        <td>20</td>
-        <td>10</td>
-        <td>5</td>
-        <td>1</td>
-      </tr>
-    </table>
+      <section class="right-output">
 
+        <div class="output-message"></div>
+        <img src="./images/stonks-up-stongs.gif" class="gif default-gif" alt="apun hi bhagwan hai">
+        <img src="./images/indian-dance-dancing.gif" class="gif profit-gif" alt="Jethalal dancing">
+        <img src="./images/housefull2010-aakhri-pasta.gif" class="gif loss-gif" alt="The office celebration">
+        <img src="./images/the-office-celebration.gif" class="gif no-profit-loss-gif" alt="akhri pasta">
+      </section>
   </main>
 
+  
 </body>
 </html>
