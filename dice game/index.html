@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="icon" type="image/png" href="icon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="heading">
+        <h1>Dice Game</h1>
+    </div>
+    <div class="rules">
+        <h3>Before you play:</h3>
+        <ul>
+            <li>Click on the 'Roll Dices' button to roll the dice.</li>
+            <li>Dice with greater number will Win.</li>
+            <li>After 3 rolls, game will be reset</li>
+        </ul>
+    </div>
+    <h3 id="reset">Start Game!</h3>
+    <div class="playground">
+        <div class="play-area">
+            <div class="player">
+                <div class="player1">
+                    <i class='bx bxs-dice-1' id="dice1"></i>
+                    <p>Player 1</p>
+                </div>
+                <div class="player2">
+                    <i class='bx bxs-dice-1' id="dice2"></i>
+                    <p>Player 2</p>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="rollDice()" id="btn">Roll Dices</button>
+            </div>
+        </div>
+       
+        <div class="result">
+            <table>
+                <tr>
+                    <th>Player 1</th>
+                    <th>Player 2</th>
+                </tr>
+                <tr>
+                    <td id="score1">0</td>
+                    <td id="score2">0</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Winner - <b><span id="result"></span></b></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+       
+
+        <script src="script.js"></script>
+</body>
+</html>
