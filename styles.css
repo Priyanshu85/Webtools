@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root{
+  --secondary-color: #c4094ee6;
+    --primary-color: #0f2bcdcc;
+  --span-color: #f7f759;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1,p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.heading {
+  background-color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-bottom-left-radius: 9rem;
+  border-bottom-right-radius: 9rem;
+}
+.heading a {
+  font-size: 2.6rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main label{
+  font-size: 2rem;
+}
+main input {
+  font-size: 1.3rem;
+  padding: 0.2rem 0.8rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 2.5px 2.5px var(--primary-color);
+}
+.show-btn {
+  font-size: 1.3rem;
+  padding: 0.1rem 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 2.5px 2.5px var(--primary-color);
+
+}
+.show-btn:active{
+  box-shadow: none;
+  transform: translateY(2.5px);
+}
+.divider {
+  width: 80%;
+  padding: 1.5px;
+  background-color: rgb(39,39,39);
+}
+
+.result {
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+  margin: 0.5rem;
+}
+span {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  gap: 1.5rem;
+  margin-top: auto;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  
+}
+.social-icons {
+  width: 2rem;
+  margin-top: 0.5rem;
+}
+@media (max-width:736px) {
+  .result {
+    font-size: 1.2rem;
+  }
+  main label {
+    font-size: 1.5rem;
+  }
+  main input {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .show-btn {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width:550px) {
+  .heading a {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width:446px) {
+  .heading {
+    padding: 0.5rem;
+  }
+  .heading a {
+    letter-spacing: -1px;
+    line-height: 1rem;
+  }
+  .result {
+    font-size: 1.1rem;
+  }
+}
